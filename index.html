@@ -108,9 +108,40 @@
                 color:#fff;
                 margin:10px 0px;
                 display:flex;
+                position:relative;
+                height:40px;
+               
+               
+                
             }
 
-           
+            .dynamictxt li{
+                margin-bottom:1px;
+            }
+
+           .dynamictxt{
+               display:flex;
+               flex-direction:column;
+               position:absolute;
+               top:0px;
+               left:25px;
+               
+                animation: slidetxt 3s infinite steps(3);
+           }
+
+           @keyframes slidetxt{
+                0%{
+                    top:0px;
+                }
+                
+                
+                100%{
+                    top:-120px;
+                }
+           }
+
+
+        
 
            
 
@@ -211,7 +242,7 @@
            <div class="content">
                 
                 <h1 class="slideleft">RICKY<span> YEUNG</span></h1>
-                <h3 class="slideleft">a 
+                <h3 class="slideleft">A 
                     <ul class=dynamictxt>
                         <li>Web Developer</li>
                         <li>father</li>
